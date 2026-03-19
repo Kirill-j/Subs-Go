@@ -1,0 +1,101 @@
+.welcome-block, .greeting-block {
+    background: var(--block-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.welcome-block { width: 1330px; }
+.greeting-block { width: 1200px; }
+
+.welcome-block h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.welcome-buttons { display: flex; gap: 1rem; }
+
+.page-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1411px;
+    margin: 0 auto;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.content-block {
+    flex: 1;
+    min-width: 600px;
+    max-width: 950px;
+    background: var(--block-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1411px;
+    margin: 0 auto;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background: var(--block-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+    transition: box-shadow var(--transition-speed) ease;
+}
+
+/* Фикс бага: убираем transform: translateY(-5px) */
+.profile-info:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.charts-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.chart-container {
+    flex: 1;
+    min-width: 400px;
+    margin-top: 1rem;
+}
+
+.chart-wrapper {
+    height: 250px;
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
