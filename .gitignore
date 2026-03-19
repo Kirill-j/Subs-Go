@@ -1,0 +1,44 @@
+# --- IDE & OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- Go (Backend) ---
+# Бинарные файлы (исполняемые)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+myapp.exe
+
+# Тесты и покрытие (важно для нашей работы!)
+*.test
+coverage.out
+
+# Зависимости и временные файлы
+vendor/
+go.sum~
+
+# --- Node/React (Frontend) ---
+node_modules/
+dist/
+build/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Секреты и Конфигурация (САМОЕ ВАЖНОЕ) ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# --- Database ---
+*.sql
+*.db
+*.db-journal
